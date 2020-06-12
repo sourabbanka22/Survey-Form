@@ -1,0 +1,102 @@
+<html>
+  <head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+  </head>
+  <body>
+    <h1 id="title">SafetyApp Survey Form</h1>
+    <div id="main-form">
+      <p id="description">Let us know how we can improve SafetyApp</p>
+      <form id="survey-form"  method="GET">
+        <div class="rowSection">
+          <div class="leftSection">
+            <label id="name-label" for="name">Enter Name: </label>
+          </div>
+          <div class="rightSection">
+            <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+          </div>
+        </div>
+        <div class="rowSection">
+          <div class="leftSection">
+            <label id="email-label" for="name">Enter Email: </label>
+          </div>
+          <div class="rightSection">
+            <input type="email" name="email" id="email" class="input-field" required placeholder="Enter your Email">
+          </div>
+        </div>
+        <div class="rowSection">
+          <div class="leftSection">
+            <label id="number-label" for="age">Enter Age: </label>
+          </div>
+          <div class="rightSection">
+            <input type="number" name="age" id="number" min="1" max="125" class="input-field" placeholder="Age">
+          </div>
+        </div>
+        <div class="rowSection">
+          <div class="leftSection">
+            <label for="Currentpost">Please Select Your Profession: </label>
+          </div>
+          <div class="rightSection">
+            <select id="dropdown" name="currentPos" class="dropdown">
+              <option disabled value>Select an option</option>
+              <option value="doctor">Doctor</option>
+              <option  value="student">Student</option>
+              <option value="engineer">Engineer</option>
+              <option value="policeMan">Police Man</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+        </div>
+        <div class="rowSection">
+          <div class="leftSection">
+            <label for="userRating">What Would you rate SafetyApp on a Scale of 1-3?</label>
+          </div>
+          <div class="rightSection">
+            <ul style="list-style: none;">
+              <li class="radio"><label>Great<input name="radio-buttons" value="1"  type="radio" class="userRatings" ></label></li>
+              <li class="radio"><label>Good<input name="radio-buttons" value="2"  type="radio" class="userRatings" ></label></li>
+              <li class="radio"><label>Needs Improvement<input name="radio-buttons" value="3"  type="radio" class="userRatings" ></label></li>
+            </ul>
+          </div>
+        </div>
+        <div class="rowSection">
+          <div class="leftSection">
+            <label for="most-like">What do you like most in the SafetyApp Application: </label>
+          </div>
+          <div class="rightSection">
+            <select id="most-like" name="mostLike" class="dropdown">
+              <option disabled selected value>Select an option</option>
+              <option value="ratingMechanism">Rating Mechanism</option>
+              <option value="safetyCalculator">Safety Calculator</option>
+              <option value="hotspotView">Hotspot View</option>
+            </select>
+          </div>
+        </div>
+        <div class="rowSection">
+          <div class="leftSection">
+            <label for="preferences">Things that needs Improvement: </label>
+          </div>
+          <div class="rightSection">
+            <ul id="preferences" style="list-style: none;">
+              <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="userRatings">Rating Mechanism</label></li>
+              <li class="checkbox"><input name="prefer" value="2" type="checkbox" class="userRatings">Safety Calculator</li>
+              <li class="checkbox"><label><input name="prefer" value="3" type="checkbox" class="userRatings">Hotspot View</label></li>
+            </ul>
+          </div>
+        </div>
+        <div class="rowSection">
+          <div class="leftSection">
+            <label for="comments">Any Suggestions?</label>
+          </div>
+          <div class="rightSection">
+            <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Enter your Suggestions here.."></textarea>
+          </div>
+        </div>
+        <button id="submit" type="submit">Submit</button>
+      </form>
+    </div>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+  </body>
+</html>
